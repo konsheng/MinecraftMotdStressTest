@@ -403,10 +403,6 @@ def main():
                     logger.error(f"查询失败：{e}")
                     with stats_lock:
                         stats["failure"] += 1
-                else:
-                    # 成功：只写日志文件，不打印到控制台
-                    with stats_lock:
-                        stats["success"] += 1
                 completed += 1
                 draw_progress("收集中", completed, total)
 
