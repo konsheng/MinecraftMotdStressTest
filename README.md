@@ -183,7 +183,7 @@
    ```
    ======================== 帮助信息 ========================
    用法示例:
-     python motd_stress_test_optimized.py        --host 119.188.247.168        --port 20000        --concurrency 100        --total 5000        --qps 200        --timeout 5        --retries 1        --logfile test.log
+     python motd_stress_test_optimized.py --host 119.188.247.168 --port 20000 --concurrency 100 --total 5000 --qps 200 --timeout 5 --retries 1 --logfile test.log
 
    参数说明:
      --host, -H           目标服务器地址或 IP（必填）。
@@ -231,7 +231,7 @@
 5. **执行压测示例**  
    - **简单示例（不写日志）**  
      ```bash
-     python motd_stress_test_optimized.py        --host play.example.com        --total 1000
+     python motd_stress_test_optimized.py --host play.example.com --total 1000
      ```  
      - 使用默认并发 50、QPS 不限制、超时 5 秒、不重试、不写日志。  
      - 脚本会 ping 一次 `play.example.com`：渲染并显示 MOTD 及服务器信息。  
@@ -240,7 +240,7 @@
 
    - **启用所有功能示例（带日志、限速、重试）**  
      ```bash
-     python motd_stress_test_optimized.py        --host play.example.com        --port 25565        --concurrency 200        --total 5000        --qps 100        --timeout 3        --retries 2        --logfile motd_test.log
+     python motd_stress_test_optimized.py --host play.example.com --port 25565 --concurrency 200 --total 5000 --qps 100 --timeout 3 --retries 2 --logfile motd_test.log
      ```  
      - 并发 200，QPS 限制 100，请求超时 3 秒，每次请求失败可重试 2 次。  
      - 所有成功请求的延迟信息写入 `motd_test.log`，控制台只显示失败和警告信息。  
