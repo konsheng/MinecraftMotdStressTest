@@ -1,4 +1,4 @@
-# MinecraftMotdStressTest 压测工具（Python 版）
+# MinecraftMotdStressTest 压测工具（Python）
 
 本项目提供一个完整、易用的 Python 脚本，用于对 Minecraft Java 服务器的 MOTD（Server List Ping）进行压力测试。它能够：
 
@@ -159,15 +159,15 @@
 
 1. **克隆或下载脚本**  
    ```bash
-   git clone <本项目仓库地址>
-   cd <项目目录>
+   git clone https://github.com/konsheng/MinecraftMotdStressTest.git
+   cd MinecraftMotdStressTest
    ```
 
 2. **创建并激活虚拟环境（可选）**  
    ```bash
    python3 -m venv venv
    source venv/bin/activate   # macOS/Linux
-   venv\Scriptsctivate      # Windows PowerShell
+   venv\Scripts ctivate      # Windows PowerShell
    ```
 
 3. **安装依赖**  
